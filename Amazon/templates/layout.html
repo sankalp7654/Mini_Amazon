@@ -7,6 +7,26 @@
         <title>Amazon</title>
     {% endif %}
 </head>
+<style>
+   body {
+        -webkit-animation: colorchange 10s infinite; 
+            animation: colorchange 10s infinite;
+        }
+        @-webkit-keyframes colorchange {
+             0%  {background: rgb(87, 236, 226);}
+            25%  {background: rgb(243, 207, 107);}
+            50%  {background: rgb(151, 243, 148);}
+            75%  {background: rgb(234, 245, 138);}
+            100% {background: rgb(87, 236, 226);}
+        }
+        @keyframes colorchange {
+             0%  {background: rgb(158, 240, 233);}
+            25%  {background: rgb(231, 243, 121);}
+            50%  {background: rgb(155, 241, 184);}
+            75%  {background: rgb(241, 201, 173);}
+            100% {background: rgb(158, 240, 233);}
+    }  
+</style>
 <body>
 <center><h1>Welcome to Mini Amazon</center></h1>
 {% block body %}
@@ -15,6 +35,7 @@
 <center>
 <footer>
     <p>&copy; Mini Amazon 2019</p>
+    <p> All right reserved &reg;</p>
     {% if title != 'Home' %}
     <a href ="/"> Home</a> 
     {% endif %}
@@ -26,6 +47,11 @@
     {% if title != 'About' %}
     <a href ="about"> About</a>
     {% endif %}
+
+    {% if session %}
+    <a href ="logout"> Log Out</a>
+    {% endif %}
+
 </footer>
 </center>
     
