@@ -1,12 +1,95 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-<center>
-	<h2>Contact Details </h2>
-	<p>Name: sankalp saxena</p>
-	<p>Phone: +91-8989468321</p>
-	<p>Twitter: sankalp_saxena</p>
 
-</center>
+<!-- page content -->
+<div class="right_col" role="main">
+	<div class="">
+	  	 
+	  <div class="clearfix"></div>
+		<br />
+		
+	  <div class="row">
+		<div class="col-md-12 col-sm-12 col-xs-12">
+			<div class="dashboard_graph">
 
+				<div class="x_panel">
+					<div class="row x_title">
+					<div class="col-md-6">
+						<h3>Get in touch with us </h3>
+					</div> 
+					</div>
+
+					<br>
+					<div class="col-md-10 col-xs-12">
+							<div class="x_panel">
+							  <div class="x_title">
+								<h2>Shoot us an mail</h2>
+								
+								<div class="clearfix"></div>
+							  </div>
+							  <div class="x_content">
+
+
+								<form class="form-group" action="https://formspree.io/sankalp.saxena.sta@gmail.com" method="POST">
+			
+								  <div class="form-group">
+									<label class="control-label col-md-3 col-sm-3 col-xs-12">First Name</label>
+									<div class="col-md-9 col-sm-9 col-xs-12">
+									  <input type="text" name="first_name" class="form-control" placeholder="Enter the first name">
+									</div>
+									<br />
+								  </div>
+								  
+								  <br />
+
+								  <div class="form-group">
+										<label class="control-label col-md-3 col-sm-3 col-xs-12">Last Name</label>
+										<div class="col-md-9 col-sm-9 col-xs-12">
+										  <input type="text" name="last_name" class="form-control" placeholder="Enter the last name">
+										</div>
+									  </div>
+								  
+									<br /><br />
+
+									<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12">Email</label>
+											<div class="col-md-9 col-sm-9 col-xs-12">
+											  <input type="text" name="email" class="form-control" placeholder="Enter the email">
+											</div>
+										  </div>
+									  
+									<br /><br />
+
+									<div class="form-group">
+
+										<label for="message">Message (20 chars min, 100 max) :</label>
+										<textarea id="message" required="required" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.."
+											data-parsley-validation-threshold="10"></textarea>
+									</div>
+										<div class="form-group">
+												<div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+												  <button type="reset" class="btn btn-primary">Reset</button>
+												  <button type="submit" class="btn btn-success" value="Send">Submit</button>
+												</div>
+											  </div>
+			
+								</form>
+							  </div>
+							</div>
+						  </div>
+		
+				  </div> 
+	
+			</div>
+
+		  </div>
+		</div>
+	  </div>
+	  <br />            
+	  <br />
+	  <br />
+	</div>
+  </div>
+  <!-- /page content -->
 {% endblock body%}

@@ -1,12 +1,186 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-<center>
-	<h2>About Mini Amazon</h2>
-	<p>Facebook: </p>
-	<p>LinkedIn: </p>
-	<p>Github: </p>
 
-</center>
+
+<!-- page content -->
+<div class="right_col" role="main">
+	<div class="">
+	  	 
+	  <div class="clearfix"></div>
+	  <br />
+
+	  <div class="row">
+		<div class="col-md-12 col-sm-12 col-xs-12">
+		  <div class="x_panel">
+			<div class="x_title">
+			  <h3>Meet the mastermind </h3>
+			  
+			  <div class="clearfix"></div>
+			</div>
+			<div class="x_content">
+			  <div class="col-md-3 col-sm-3 col-xs-12 profile_left">
+				<div class="profile_img">
+				  <div id="crop-avatar">
+					<!-- Current avatar -->
+					<img class="img-responsive avatar-view" src="../static/build/images/profile.jpg" alt="Avatar" title="Change the avatar">
+				  </div>
+				</div>
+				<h3>Sankalp Saxena</h3>
+
+				<ul class="list-unstyled user_data">
+				  <li><i class="fa fa-map-marker user-profile-icon"></i> Bengaluru, India
+				  </li>
+
+				  <li>
+					<i class="fa fa-briefcase user-profile-icon"></i> Software Developer
+				  </li>
+
+				  <li class="m-top-xs">
+					<i class="fa fa-external-link user-profile-icon"></i>
+					<a href="http://www.sankalpsaxena.com" target="_blank">www.sankalpsaxena.com</a>
+				  </li>
+				</ul>
+
+				<br />
+
+				<!-- start skills -->
+				<h4>Skills</h4>
+				<ul class="list-unstyled user_data">
+				  <li>
+					<p>Java</p>
+					<div class="progress progress_sm">
+					  <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="100"></div>
+					</div>
+				  </li>
+				  <li>
+					<p>Python</p>
+					<div class="progress progress_sm">
+					  <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="70"></div>
+					</div>
+				  </li>
+				  <li>
+					<p>SQL</p>
+					<div class="progress progress_sm">
+					  <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="70"></div>
+					</div>
+				  </li>
+				  <li>
+					<p>No SQL</p>
+					<div class="progress progress_sm">
+					  <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="70"></div>
+					</div>
+				  </li>
+				  <li>
+					<p>UI / UX</p>
+					<div class="progress progress_sm">
+					  <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
+					</div>
+				  </li>
+				</ul>
+				<!-- end of skills -->
+
+			  </div>
+			  <div class="col-md-9 col-sm-9 col-xs-12">
+
+				
+				<div class="" role="tabpanel" data-example-id="togglable-tabs">
+				  <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
+					
+					<li role="presentation" class="active"><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Projects Worked on</a>
+					</li>
+					<li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Profile</a>
+					</li>
+				  </ul>
+				  <div id="myTabContent" class="tab-content">
+					
+					<div role="tabpanel" class="tab-pane fade active in" id="tab_content2" aria-labelledby="profile-tab">
+
+					  <!-- start user projects -->
+					  <table class="data table table-striped no-margin">
+						<thead>
+						  <tr>
+							<th>#</th>
+							<th>Project Name</th>
+							<th>Client Company</th>
+							<th class="hidden-phone">Hours Spent</th>
+							<th>Contribution</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td>1</td>
+							<td>Attendance Management System</td>
+							<td>Aikya Software Wing</td>
+							<td class="hidden-phone">18</td>
+							<td class="vertical-align-mid">
+							  <div class="progress">
+								<div class="progress-bar progress-bar-success" data-transitiongoal="75"></div>
+							  </div>
+							</td>
+						  </tr>
+						  <tr>
+							<td>2</td>
+							<td>Notes Management System</td>
+							<td>Aikya Software Wing</td>
+							<td class="hidden-phone">13</td>
+							<td class="vertical-align-mid">
+							  <div class="progress">
+								<div class="progress-bar progress-bar-danger" data-transitiongoal="35"></div>
+							  </div>
+							</td>
+						  </tr>
+						  <tr>
+							<td>3</td>
+							<td>In-memory database Vs FileSystem</td>
+							<td>Prop</td>
+							<td class="hidden-phone">30</td>
+							<td class="vertical-align-mid">
+							  <div class="progress">
+								<div class="progress-bar progress-bar-success" data-transitiongoal="100"></div>
+							  </div>
+							</td>
+						  </tr>
+						  <tr>
+							<td>4</td>
+							<td>Excel to Csv Parser</td>
+							<td>Kinard Realty Group</td>
+							<td class="hidden-phone">28</td>
+							<td class="vertical-align-mid">
+							  <div class="progress">
+								<div class="progress-bar progress-bar-success" data-transitiongoal="100"></div>
+							  </div>
+							</td>
+						  </tr>
+						  <tr>
+							<td>5</td>
+							<td>Mini Amazon</td>
+							<td>The Valley Bootcamp</td>
+							<td class="hidden-phone">Ongoing</td>
+							<td class="vertical-align-mid">
+							  <div class="progress">
+								<div class="progress-bar progress-bar-success" data-transitiongoal="100"></div>
+							  </div>
+							</td>
+						  </tr>
+						</tbody>
+					  </table>
+					  <!-- end user projects -->
+
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
+					  <p>Experienced Software Engineer with a demonstrated history of working in the computer software industry. Skilled in Guitar Playing, C++, Sketcher, Web Design, and Java. Strong engineering professional graduated from Christukula Mission Higher Secondary School. </p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  <!-- /page content -->
+
 
 {% endblock body%}
